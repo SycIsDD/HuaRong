@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C8BD6F57</color>
+    <color name="colorPrimaryDark">#B35231</color>
+    <color name="colorAccent">#D81B60</color>+
+    <color name="colorViewBackground">#E0FFFF</color>
+    <color name="colorSelected">#FF4500</color>
+    <color name="colorFigureBackground">#BCB1634E</color>
+    <color name="colorEmpty">#62D8F0</color>
+    <color name="testIcon">#FFF520</color>
+    <color name="easyIcon">#76EC14</color>
+    <color name="midIcon">#23B4B9</color>
+    <color name="highIcon">#FA6767</color>
+    <color name="colorButton">#A1F3906E</color>
+    <color name="colorShadow">#A156565F</color>
+</resources>

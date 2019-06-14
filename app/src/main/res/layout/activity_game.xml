@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <extendForGame.DrawView
+        android:id="@+id/PictureView"
+        android:layout_width="0dp"
+        android:layout_height="525dp"
+        android:layout_below="@+id/stepView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backStepButton"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/stepView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:text="步数:0"
+        android:textColor="@color/colorViewBackground"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backStepButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backStepButton" />
+
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        android:textColor="@color/colorViewBackground"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/goBackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goBackButton" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stepView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="goBack"
+        android:text=" 退出本关 "
+        android:textColor="@color/colorViewBackground"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:qmui_backgroundColor="@color/colorButton"
+        app:qmui_borderColor="@color/colorButton"
+        app:qmui_radiusBottomLeft="30dp"
+        app:qmui_radiusBottomRight="30dp"
+        app:qmui_radiusTopLeft="30dp"
+        app:qmui_radiusTopRight="30dp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/backStepButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/stepView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="backStep"
+        android:text=" 我要悔棋 "
+        android:textColor="@color/colorViewBackground"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goBackButton"
+        app:qmui_backgroundColor="@color/colorButton"
+        app:qmui_borderColor="@color/colorButton"
+        app:qmui_radiusBottomLeft="30dp"
+        app:qmui_radiusBottomRight="30dp"
+        app:qmui_radiusTopLeft="30dp"
+        app:qmui_radiusTopRight="30dp" />
+
+</android.support.constraint.ConstraintLayout>

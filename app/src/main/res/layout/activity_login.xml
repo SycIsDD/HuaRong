@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/selectback">
+
+    <EditText
+
+        android:id="@+id/account_input"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用户名"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round_textedit"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/password_input"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round_textedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_below="@id/account_input"
+        android:textSize="20sp"/>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorButton"
+        android:onClick="submit"
+        android:text=""
+        android:textColor="@color/qmui_config_color_separator"
+        android:textSize="20sp"
+        app:qmui_backgroundColor="@color/colorButton"
+        app:qmui_borderColor="@color/colorButton"
+        app:qmui_radiusBottomLeft="30dp"
+        app:qmui_radiusBottomRight="30dp"
+        app:qmui_radiusTopLeft="30dp"
+        app:qmui_radiusTopRight="30dp" />
+</RelativeLayout>
